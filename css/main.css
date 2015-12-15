@@ -23,6 +23,7 @@ img {
 	background-size: cover; 
 	background-position: center;
 	float: left;
+	transition: width 1s;
 }
 #content.active {
 	width: calc(100% - 380px);
@@ -38,9 +39,6 @@ img {
 }
 .navElements {
 	margin-top: 20px;
-}
-.navElements:hover {
-	background-color: #7dd5c9;
 }
 .navElements.active {
 	background-color: #7dd5c9;
@@ -60,6 +58,7 @@ img {
 	background-position: top-center;
 	background-repeat: no-repeat;
 	float: left;
+	transition: width 1s;
 }
 #menu.active {
 	width: 380px;
