@@ -55,9 +55,10 @@ img {
 #menu {
 	width: 0px;
 	height: 100%;
+	background-color: #111f39;
 	background-image: url(menu.jpg);
-	background-size: cover; 
-	background-position: center;
+	background-position: top-center;
+	background-repeat: no-repeat;
 	float: left;
 }
 #menu.active {
