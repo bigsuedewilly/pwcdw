@@ -1,2 +1,2 @@
 # pwcdw
-Base for some websites to be built in the future
+The foundation of some potentially built website in the immediate future.
