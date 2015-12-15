@@ -9,7 +9,6 @@ $(".navElements").on("click", function()
 	else 
 	{
 		$(this).addClass("active");
-		$(".navElements" != this).removeClass("active");
 		$("#menu").addClass("active");
 		$("#content").addClass("active");
 	}
