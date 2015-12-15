@@ -28,6 +28,11 @@ img {
 #content.active {
 	width: calc(100% - 380px);
 }
+#innerContent {
+	width: calc(100% - 70px);
+	height: 100%;
+	float: left;
+}
 #logo {
 	height: 100%;
 	padding: 20px;
@@ -35,14 +40,14 @@ img {
 }
 #navList {
 	height: 100%;
-	float: right;
+	float: left;
 }
 .navElements {
 	margin-top: 20px;
+	transition: all .2s;
 }
 .navElements.active {
-	background-color: #7dd5c9;
-}
+	background-color: #7dd5c9;}
 #footer {
 	height: 350px;
 	width: 100%;
@@ -53,13 +58,46 @@ img {
 #menu {
 	width: 0px;
 	height: 100%;
-	background-color: #111f39;
-	background-image: url(menu.jpg);
-	background-position: top-center;
-	background-repeat: no-repeat;
 	float: left;
 	transition: width 1s;
 }
+.menu01, .menu02, .menu03 {
+	width: 100%;
+	height: 100%;
+	transition: width: 1s;
+	display: none;
+}
+.menu01.active, .menu02.active, .menu03.active {
+	display: block;
+	background-position: top-center;
+	background-repeat: no-repeat;
+}
+.menu01.active {
+	background-color: #111f39;
+	background-image: url(menu01.jpg);
+	
+}
+.menu02.active {
+	background-color: #36260c;
+	background-image: url(menu02.jpg);
+}
+.menu03.active {
+	background-color: #212121;
+	background-image: url(menu03.jpg);
+}
 #menu.active {
 	width: 380px;
+}
+#close {
+	display: none;
+	float: right;
+	padding: 25px;
+}
+#close.active {
+	display: block;
+	animation: opacity .5s;
+}
+@keyframes opacity {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
 }
