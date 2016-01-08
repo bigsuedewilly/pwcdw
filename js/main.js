@@ -23,7 +23,7 @@ $(".navElements").on("click", function()
 });
 
 //Exiting menu mode
-$("#close").on("click", function() {
+$("#close, #innerContent").on("click", function() {
 	$("#close").removeClass(a);
 	$("#menu").removeClass(a);
 	$("#content").removeClass(a);
