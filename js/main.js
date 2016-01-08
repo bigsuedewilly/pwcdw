@@ -1,17 +1,21 @@
 var a = "active";
+var state = [false, null];
 
 
 $(".navElements").on("click", function() 
 {
 	//Entering menu mode
-	
-	$("#menu").addClass(a);
+	$("#menu").removeClass();
+	state[0] = true;
+	state[1] = this.id;
+	$("#menu").addClass(a + " " + state[1]);
 	$("#content").addClass(a);
+	//alert(state[1]);
 
 	//Need this function to be rewritten to squash a bug
 	setTimeout(function addButton()
 	{
-		$("#menu img").addClass(a);
+		if (state[0] != false) { $("#menu img").addClass(a); }
 	}, 1000);
 
 	//Tab switching
@@ -24,11 +28,12 @@ $(".navElements").on("click", function()
 
 //Exiting menu mode
 $("#close, #innerContent").on("click", function() {
-	$("#close").removeClass(a);
-	$("#menu").removeClass(a);
+	$("#menu").removeClass();
+	$("#menu img").removeClass(a);
 	$("#content").removeClass(a);
 	$(".navElements").removeClass(a);
+	state[0] = false;
+	state[1] = null;
 });
-
 
 
