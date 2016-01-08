@@ -1,6 +1,23 @@
 var a = "active";
 var state = [false, null];
+var links = ["/whatever1", "/whatever2", "/whatever3"];
+var buttons = ["/btn1.png", "/btn2.png", "/btn3.png"];
 
+function drawButtons(buttons) 
+{
+	setTimeout(function drawButtons()
+	{
+		var count = 0;
+		/*
+		while (count < links.length)
+		{
+
+			div.append(<img src = "buttons[x]" onclick=location.href = 'links[x]';")
+			count++;
+		}
+		*/
+	}, 1000);
+}
 
 $(".navElements").on("click", function() 
 {
