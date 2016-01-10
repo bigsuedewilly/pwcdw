@@ -29,15 +29,11 @@ $(".navElements").on("click", function()
 	$("#content").addClass(a);
 	//alert(state[1]);
 
-	//Need this function to be rewritten to squash a bug
 	setTimeout(function addButton()
 	{
 		if (state[0] != false) { $("#menu img").addClass(a); }
 	}, 1000);
 
-	//Tab switching
-	var menuShow = $(this).attr("rel");
-	
 	$(".navElements.active").not(this).removeClass(a);
 	$(this).addClass(a);
 

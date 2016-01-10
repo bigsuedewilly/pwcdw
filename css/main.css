@@ -16,6 +16,7 @@ img {
 	background-image: #ccc;
 	display: table;
 }
+
 #content {
 	width: 100%;
 	height: 100%;
@@ -38,6 +39,8 @@ img {
 	padding: 20px;
 	float: left;
 }
+
+/*Navigation buttons in content area*/
 #navList {
 	height: 100%;
 	float: left;
@@ -46,24 +49,20 @@ img {
 	margin-top: 20px;
 	transition: all .2s;
 }
-.navElements.active {
-	background-color: #7dd5c9;}
-#footer {
-	height: 350px;
-	width: 100%;
-	background-image: url(footer.jpg);
-	background-size: cover; 
-	background-position: center;
-}
+.navElements.active {background-color: #7dd5c9;}
+
+/*Navigation Menu*/
 #menu {
 	width: 0px;
 	height: 100%;
 	float: left;
 	transition: width 1s;
 }
-.a2 {
-	background-color: #000;
-}
+
+.a1 {background-color: #999;}
+.a2 {background-color: #888;}
+.a3 {background-color: #777;}
+
 #menu.active {
 	width: 380px;
 }
@@ -79,4 +78,13 @@ img {
 @keyframes opacity {
 	0%   {opacity: 0;}
 	100% {opacity: 1;}
+}
+
+/*Footer Area*/
+#footer {
+	height: 350px;
+	width: 100%;
+	background-image: url(footer.jpg);
+	background-size: cover; 
+	background-position: center;
 }
